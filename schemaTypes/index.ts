@@ -1,7 +1,19 @@
-import blockContent from './blockContent'
-import category from './category'
-import post from './post'
 import author from './author'
-import { testSchemaType } from './testSchemaType';
+import blog from './blogPost'
+import gallery from './gallery'
+import credentials from './credentials'
+import events from './events';
+import phrases from './phrases';
+import blogContent from './blogContent';
+import eventContent from './eventContent';
 
-export const schemaTypes = [post, author, category, blockContent, testSchemaType]
+export const schemaTypes = [
+  author,
+  blog,
+  blogContent,
+  eventContent,
+  gallery,
+  credentials,
+  events,
+  phrases,
+]
