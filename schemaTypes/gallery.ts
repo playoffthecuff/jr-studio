@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import isUniqueAcrossSameTypeDocs from '../lib/isUniqueAcrossSameTypeDocs';
 
 export default defineType({
   name: 'galleryImage',
@@ -23,8 +24,9 @@ export default defineType({
       title: 'Адрес страницы сайта',
       options: {
         source: 'title.en',
+        isUnique: isUniqueAcrossSameTypeDocs,
       },
-      validation: (Rule) => Rule.required(),
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'visible',
