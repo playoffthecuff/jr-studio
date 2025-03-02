@@ -12,7 +12,7 @@ const isUniqueAcrossSameTypeDocs = async (slug: any, context: any) => {
     },
   )
 
-  return exists === 0
+  return exists === 0;
 }
 
-export default isUniqueAcrossSameTypeDocs
+export default isUniqueAcrossSameTypeDocs;
