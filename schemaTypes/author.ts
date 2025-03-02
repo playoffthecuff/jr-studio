@@ -136,7 +136,7 @@ export default defineType({
                   options: {
                     dateFormat: 'YYYY-MM'
                   },
-                  validation: (Rule) => Rule.required().min(Rule.valueOfField('startDate')),
+                  validation: (Rule) => Rule.min(Rule.valueOfField('startDate')),
                 }),
                 defineField({
                   name: 'content',
